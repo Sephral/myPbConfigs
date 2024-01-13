@@ -1,10 +1,10 @@
 # myPbConfigs
-These are my Passivbot Configurations.
 
-Passivbot: https://github.com/enarjord/passivbot
+Check this Overview: https://sephral.github.io/myPbConfigs/
 
-pbgui: https://github.com/msei99/pbgui
 
-Scud's: https://pbconfigdb.scud.dedyn.io
-
-Scud's (Spot): https://pbconfigdb.scud.dedyn.io/spot
+## Important Links:
+- Passivbot: https://github.com/enarjord/passivbot
+- pbgui: https://github.com/msei99/pbgui
+- Scud's Futures Collection: https://pbconfigdb.scud.dedyn.io
+- Scud's Spot Collection: https://pbconfigdb.scud.dedyn.io/spot
