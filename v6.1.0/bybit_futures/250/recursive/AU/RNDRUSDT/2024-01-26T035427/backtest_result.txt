@@ -3,52 +3,52 @@
 +-----------------------------------------+----------------+
 | Metric                                  | Value          |
 +-----------------------------------------+----------------+
-| Exchange                                | bybit          |
-| Market type                             | futures        |
+| Exchange                                | binance        |
+| Market type                             | spot           |
 | Symbol                                  | RNDRUSDT       |
 | Passivbot mode                          | recursive_grid |
 | ADG n subdivisions                      | 10             |
 | No. days                                | 360.0          |
-| Starting balance                        | 250.0          |
+| Starting balance                        | 300.0          |
 |                                         |                |
 | Long                                    | True           |
-| ADG per exposure                        | 0.261%         |
-| ADG weighted per exposure               | 0.277%         |
-| Max drawdown                            | 11.469%        |
-| Drawdown mean of 1% worst (hourly)      | 5.8211%        |
-| Sharpe Ratio (daily)                    | 0.27816        |
-| Loss to profit ratio                    | 0.07273        |
-| P.A. distance mean of 1% worst (hourly) | 0.0735144      |
+| ADG per exposure                        | 0.162%         |
+| ADG weighted per exposure               | 0.211%         |
+| Max drawdown                            | 28.752%        |
+| Drawdown mean of 1% worst (hourly)      | 22.003%        |
+| Sharpe Ratio (daily)                    | 0.102493       |
+| Loss to profit ratio                    | 0.1911         |
+| P.A. distance mean of 1% worst (hourly) | 0.21166        |
 |                                         |                |
-| Final balance                           | 648.443        |
-| Final equity                            | 647.62         |
-| Net PNL + fees                          | 398.443        |
-| Net Total gain                          | 159.4%         |
-| Average daily gain                      | 0.261%         |
-| Average daily gain weighted             | 0.277%         |
-| Exposure ratios mean                    | 0.087917       |
-| Price action distance mean              | 0.0139208      |
-| Price action distance std               | 0.0121917      |
-| Price action distance max               | 0.124947       |
-| Closest bankruptcy                      | 99.96%         |
-| Lowest equity/balance ratio             | 0.8889         |
-| Mean of 10 worst eq/bal ratios (hourly) | 0.902          |
-| Equity/balance ratio std                | 0.006518       |
-| Ratio of time spent at max exposure     | 0.00879        |
-| No. fills                               | 6968           |
-| No. entries                             | 1949           |
-| No. closes                              | 5019           |
-| No. initial entries                     | 1469           |
-| No. reentries                           | 480            |
+| Final balance                           | 541.657        |
+| Final equity                            | 540.868        |
+| Net PNL + fees                          | 241.657        |
+| Net Total gain                          | 80.55%         |
+| Average daily gain                      | 0.162%         |
+| Average daily gain weighted             | 0.211%         |
+| Exposure ratios mean                    | 0.14256        |
+| Price action distance mean              | 0.0205162      |
+| Price action distance std               | 0.028842       |
+| Price action distance max               | 0.315916       |
+| Closest bankruptcy                      | 99.93%         |
+| Lowest equity/balance ratio             | 0.7599         |
+| Mean of 10 worst eq/bal ratios (hourly) | 0.7738         |
+| Equity/balance ratio std                | 0.02123        |
+| Ratio of time spent at max exposure     | 0.04384        |
+| No. fills                               | 4560           |
+| No. entries                             | 1697           |
+| No. closes                              | 2863           |
+| No. initial entries                     | 1264           |
+| No. reentries                           | 433            |
 | No. unstuck/EMA entries                 | 0              |
-| No. unstuck/EMA closes                  | 65             |
-| No. normal closes                       | 4954           |
-| Average n fills per day                 | 19.1           |
-| Mean hours stuck                        | 1.25497        |
-| Max hours stuck                         | 79.6667        |
-| PNL sum                                 | 416.3          |
-| Profit sum                              | 449.0          |
-| Loss sum                                | -32.66         |
-| Fee sum                                 | -17.9          |
-| Volume quote                            | 122654.0       |
+| No. unstuck/EMA closes                  | 83             |
+| No. normal closes                       | 2780           |
+| Average n fills per day                 | 12.5           |
+| Mean hours stuck                        | 1.91785        |
+| Max hours stuck                         | 169.283        |
+| PNL sum                                 | 321.8          |
+| Profit sum                              | 397.9          |
+| Loss sum                                | -76.05         |
+| Fee sum                                 | -80.15         |
+| Volume quote                            | 114342.0       |
 +-----------------------------------------+----------------+
