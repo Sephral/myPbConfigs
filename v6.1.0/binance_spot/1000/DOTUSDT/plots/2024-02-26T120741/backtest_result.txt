@@ -1,0 +1,54 @@
++----------------------------------------------------------+
+|                         Summary                          |
++-----------------------------------------+----------------+
+| Metric                                  | Value          |
++-----------------------------------------+----------------+
+| Exchange                                | binance        |
+| Market type                             | spot           |
+| Symbol                                  | DOTUSDT        |
+| Passivbot mode                          | recursive_grid |
+| ADG n subdivisions                      | 10             |
+| No. days                                | 360.0          |
+| Starting balance                        | 1000.0         |
+|                                         |                |
+| Long                                    | True           |
+| ADG per exposure                        | 0.142%         |
+| ADG weighted per exposure               | 0.382%         |
+| Max drawdown                            | 9.1875%        |
+| Drawdown mean of 1% worst (hourly)      | 7.1129%        |
+| Sharpe Ratio (daily)                    | 0.175265       |
+| Loss to profit ratio                    | 0.2889         |
+| P.A. distance mean of 1% worst (hourly) | 0.0520868      |
+|                                         |                |
+| Final balance                           | 1677.95        |
+| Final equity                            | 1671.59        |
+| Net PNL + fees                          | 677.946        |
+| Net Total gain                          | 67.79%         |
+| Average daily gain                      | 0.142%         |
+| Average daily gain weighted             | 0.382%         |
+| Exposure ratios mean                    | 0.16269        |
+| Price action distance mean              | 0.00872958     |
+| Price action distance std               | 0.00832379     |
+| Price action distance max               | 0.0869485      |
+| Closest bankruptcy                      | 95.93%         |
+| Lowest equity/balance ratio             | 0.9185         |
+| Mean of 10 worst eq/bal ratios (hourly) | 0.9304         |
+| Equity/balance ratio std                | 0.006476       |
+| Ratio of time spent at max exposure     | 0.03607        |
+| No. fills                               | 4590           |
+| No. entries                             | 1465           |
+| No. closes                              | 3125           |
+| No. initial entries                     | 1196           |
+| No. reentries                           | 269            |
+| No. unstuck/EMA entries                 | 0              |
+| No. unstuck/EMA closes                  | 862            |
+| No. normal closes                       | 2263           |
+| Average n fills per day                 | 12.6           |
+| Mean hours stuck                        | 1.90343        |
+| Max hours stuck                         | 10.2167        |
+| PNL sum                                 | 887.5          |
+| Profit sum                              | 1248.0         |
+| Loss sum                                | -360.5         |
+| Fee sum                                 | -209.6         |
+| Volume quote                            | 656082.0       |
++-----------------------------------------+----------------+

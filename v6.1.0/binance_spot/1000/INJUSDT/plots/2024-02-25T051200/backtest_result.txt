@@ -1,0 +1,54 @@
++----------------------------------------------------------+
+|                         Summary                          |
++-----------------------------------------+----------------+
+| Metric                                  | Value          |
++-----------------------------------------+----------------+
+| Exchange                                | binance        |
+| Market type                             | spot           |
+| Symbol                                  | INJUSDT        |
+| Passivbot mode                          | recursive_grid |
+| ADG n subdivisions                      | 10             |
+| No. days                                | 360.0          |
+| Starting balance                        | 1000.0         |
+|                                         |                |
+| Long                                    | True           |
+| ADG per exposure                        | 0.339%         |
+| ADG weighted per exposure               | 0.604%         |
+| Max drawdown                            | 13.418%        |
+| Drawdown mean of 1% worst (hourly)      | 8.9112%        |
+| Sharpe Ratio (daily)                    | 0.228121       |
+| Loss to profit ratio                    | 0.08883        |
+| P.A. distance mean of 1% worst (hourly) | 0.0968076      |
+|                                         |                |
+| Final balance                           | 3444.01        |
+| Final equity                            | 3421.34        |
+| Net PNL + fees                          | 2444.01        |
+| Net Total gain                          | 244.4%         |
+| Average daily gain                      | 0.339%         |
+| Average daily gain weighted             | 0.604%         |
+| Exposure ratios mean                    | 0.16029        |
+| Price action distance mean              | 0.0228392      |
+| Price action distance std               | 0.018844       |
+| Price action distance max               | 0.153015       |
+| Closest bankruptcy                      | 90.42%         |
+| Lowest equity/balance ratio             | 0.8672         |
+| Mean of 10 worst eq/bal ratios (hourly) | 0.8839         |
+| Equity/balance ratio std                | 0.01072        |
+| Ratio of time spent at max exposure     | 0.03231        |
+| No. fills                               | 3922           |
+| No. entries                             | 598            |
+| No. closes                              | 3324           |
+| No. initial entries                     | 495            |
+| No. reentries                           | 103            |
+| No. unstuck/EMA entries                 | 0              |
+| No. unstuck/EMA closes                  | 255            |
+| No. normal closes                       | 3069           |
+| Average n fills per day                 | 10.7           |
+| Mean hours stuck                        | 2.21716        |
+| Max hours stuck                         | 84.5667        |
+| PNL sum                                 | 2772.0         |
+| Profit sum                              | 3042.0         |
+| Loss sum                                | -270.2         |
+| Fee sum                                 | -328.0         |
+| Volume quote                            | 713524.0       |
++-----------------------------------------+----------------+
