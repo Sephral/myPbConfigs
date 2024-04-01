@@ -1,0 +1,54 @@
++----------------------------------------------------------+
+|                         Summary                          |
++-----------------------------------------+----------------+
+| Metric                                  | Value          |
++-----------------------------------------+----------------+
+| Exchange                                | bybit          |
+| Market type                             | futures        |
+| Symbol                                  | LTCUSDT        |
+| Passivbot mode                          | recursive_grid |
+| ADG n subdivisions                      | 10             |
+| No. days                                | 450.0          |
+| Starting balance                        | 1000.0         |
+|                                         |                |
+| Long                                    | True           |
+| ADG per exposure                        | 0.0426%        |
+| ADG weighted per exposure               | 0.0814%        |
+| Max drawdown                            | 19.506%        |
+| Drawdown mean of 1% worst (hourly)      | 15.774%        |
+| Sharpe Ratio (daily)                    | 0.0429603      |
+| Loss to profit ratio                    | 0.1265         |
+| P.A. distance mean of 1% worst (hourly) | 0.168626       |
+|                                         |                |
+| Final balance                           | 1212.51        |
+| Final equity                            | 1212.37        |
+| Net PNL + fees                          | 212.514        |
+| Net Total gain                          | 21.25%         |
+| Average daily gain                      | 0.0426%        |
+| Average daily gain weighted             | 0.0814%        |
+| Exposure ratios mean                    | 0.19962        |
+| Price action distance mean              | 0.0338818      |
+| Price action distance std               | 0.0407167      |
+| Price action distance max               | 0.226763       |
+| Closest bankruptcy                      | 95.2%          |
+| Lowest equity/balance ratio             | 0.8132         |
+| Mean of 10 worst eq/bal ratios (hourly) | 0.8247         |
+| Equity/balance ratio std                | 0.03447        |
+| Ratio of time spent at max exposure     | 0.1537         |
+| No. fills                               | 4576           |
+| No. entries                             | 928            |
+| No. closes                              | 3648           |
+| No. initial entries                     | 796            |
+| No. reentries                           | 132            |
+| No. unstuck/EMA entries                 | 0              |
+| No. unstuck/EMA closes                  | 28             |
+| No. normal closes                       | 3620           |
+| Average n fills per day                 | 10.1           |
+| Mean hours stuck                        | 2.3697         |
+| Max hours stuck                         | 198.633        |
+| PNL sum                                 | 228.8          |
+| Profit sum                              | 262.0          |
+| Loss sum                                | -33.15         |
+| Fee sum                                 | -16.33         |
+| Volume quote                            | 230781.0       |
++-----------------------------------------+----------------+
