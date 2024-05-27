@@ -1,0 +1,54 @@
++----------------------------------------------------------+
+|                         Summary                          |
++-----------------------------------------+----------------+
+| Metric                                  | Value          |
++-----------------------------------------+----------------+
+| Exchange                                | bybit          |
+| Market type                             | futures        |
+| Symbol                                  | POWRUSDT       |
+| Passivbot mode                          | recursive_grid |
+| ADG n subdivisions                      | 10             |
+| No. days                                | 150.0          |
+| Starting balance                        | 1000.0         |
+|                                         |                |
+| Long                                    | True           |
+| ADG per exposure                        | 0.0707%        |
+| ADG weighted per exposure               | 0.0422%        |
+| Max drawdown                            | 25.411%        |
+| Drawdown mean of 1% worst (hourly)      | 24.232%        |
+| Sharpe Ratio (daily)                    | 0.0397847      |
+| Loss to profit ratio                    | 0.1843         |
+| P.A. distance mean of 1% worst (hourly) | 0.356449       |
+|                                         |                |
+| Final balance                           | 1108.64        |
+| Final equity                            | 1108.68        |
+| Net PNL + fees                          | 108.643        |
+| Net Total gain                          | 10.86%         |
+| Average daily gain                      | 0.0707%        |
+| Average daily gain weighted             | 0.0422%        |
+| Exposure ratios mean                    | 0.2362         |
+| Price action distance mean              | 0.0888901      |
+| Price action distance std               | 0.110121       |
+| Price action distance max               | 0.396355       |
+| Closest bankruptcy                      | 99.99%         |
+| Lowest equity/balance ratio             | 0.7549         |
+| Mean of 10 worst eq/bal ratios (hourly) | 0.7635         |
+| Equity/balance ratio std                | 0.07383        |
+| Ratio of time spent at max exposure     | 0.07021        |
+| No. fills                               | 3313           |
+| No. entries                             | 411            |
+| No. closes                              | 2902           |
+| No. initial entries                     | 307            |
+| No. reentries                           | 104            |
+| No. unstuck/EMA entries                 | 0              |
+| No. unstuck/EMA closes                  | 10             |
+| No. normal closes                       | 2892           |
+| Average n fills per day                 | 22.7           |
+| Mean hours stuck                        | 1.03316        |
+| Max hours stuck                         | 237.35         |
+| PNL sum                                 | 113.4          |
+| Profit sum                              | 139.0          |
+| Loss sum                                | -25.62         |
+| Fee sum                                 | -4.757         |
+| Volume quote                            | 92530.8        |
++-----------------------------------------+----------------+
