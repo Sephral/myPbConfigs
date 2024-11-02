@@ -63,7 +63,7 @@ with col1:
         entry_grid_spacing_weight = st.slider(
             "entry_grid_spacing_weight",
             min_value=0.0,
-            max_value=5.0,
+            max_value=20.0,
             value=1.0,
             step=0.1
         )
@@ -141,45 +141,65 @@ def calculate_entry_grid(start_price, start_balance, wallet_exposure_limit,
     entry_costs.append(costs)  # Append the initial entry cost to the costs list
     wallet_exposure = sum(entry_costs) / (start_balance)  # Calculate the wallet exposure
     entry_exposures.append(wallet_exposure)  # Append the wallet exposure to the exposures list
+    wallet_exposure = (sum(entry_costs) + costs) / (start_balance) # Calculate the wallet exposure
     iteration += 1
     
     # Loop to calculate remaining entry grid levels    
     stop = False
     while not stop: 
         # Calculate the next entry price based on the parameters
-        wallet_exposure = sum(entry_costs) / (start_balance)  # Calculate the wallet exposure
         ratio = wallet_exposure / wallet_exposure_limit  # Calculate the exposure ratio
         modifier = (1 + (ratio * entry_grid_spacing_weight))  # Adjust the spacing modifier
         
+        old_price = price
         price = price * (1 - (entry_grid_spacing_pct * modifier))  # Calculate the next entry price
         size = sum(entry_quantities) * entry_grid_double_down_factor  # Increase the quantity for the next level
         costs = price * size  # Calculate the costs for the next level
+        wallet_exposure = (sum(entry_costs) + costs) / (start_balance)  # Calculate the wallet exposure
         iteration += 1  # Increment the iteration counter
         
-        new_wallet_exposure = (sum(entry_costs) + costs) / (start_balance)
+
 
         # Append the calculated price and quantity to the respective lists
-        if new_wallet_exposure <= wallet_exposure_limit and price > 0:
+        if wallet_exposure <= wallet_exposure_limit and price > 0:
             entry_prices.append(price)  # Append the calculated price to the entry prices list
             entry_quantities.append(size)  # Append the quantity percentage to the quantities list
             entry_costs.append(costs)  # Append the initial entry cost to the costs list
             entry_exposures.append(wallet_exposure)  # Append the wallet exposure to the exposures list
         else:
+            #print all variables for debugging
+            # st.text(f"old_price: {old_price}")
+            # st.text(f"price: {price}")
+            # st.text(f"size: {size}")
+            # st.text(f"costs: {costs}")
+            # st.text(f"wallet_exposure: {wallet_exposure}")
+            # st.text(f"wallet_exposure_limit: {wallet_exposure_limit}")
+            # st.text(f"entry_prices: {entry_prices}")
+            # st.text(f"entry_quantities: {entry_quantities}")
+            # st.text(f"entry_costs: {entry_costs}")
+            # st.text(f"entry_exposures: {entry_exposures}")
+            
+            
             # Special treatment for the last entry level
-            entry_prices.append(price)  # Append the calculated price to the entry prices list
+            if (wallet_exposure > wallet_exposure_limit) or (old_price > 0 and price < 0):
+                entry_prices.append(price)
+                
+                # Calculate remaining funds, size and costs
+                we_reamining = wallet_exposure_limit - entry_exposures[-1]
+                funds_remaining = we_reamining * start_balance
+                size = funds_remaining / price
+                costs = price * size
+                
+                entry_quantities.append(size)  # Append the quantity percentage to the quantities list
+                entry_costs.append(costs)  # Append the initial entry cost to the costs list
+                wallet_exposure = sum(entry_costs) / (start_balance)
+                entry_exposures.append(wallet_exposure)  # Append the wallet exposure to the exposures list
             
-            # Calculate remaining funds, size and costs
-            we_reamining = wallet_exposure_limit - entry_exposures[-1]
-            funds_remaining = we_reamining * start_balance
-            size = funds_remaining / price
-            costs = price * size
-            
-            entry_quantities.append(size)  # Append the quantity percentage to the quantities list
-            entry_costs.append(costs)  # Append the initial entry cost to the costs list
-            wallet_exposure = sum(entry_costs) / (start_balance)
-            entry_exposures.append(wallet_exposure)  # Append the wallet exposure to the exposures list
             
             stop = True
+            
+        if price <= 1:
+            stop = True    
             
     # print all lists to st.text for debugging
     # st.text(entry_prices)
@@ -369,7 +389,10 @@ def calculate_statistics(entry_prices, close_grid_tp_prices, entry_quantities, c
     stats['Number of Entry Levels'] = len(entry_prices)  # Total number of entry levels
     stats['Number of Close TP Levels'] = len(close_grid_tp_prices)  # Total number of close TP levels
     stats['Entry Prices Range'] = f"{min(entry_prices):.2f} - {max(entry_prices):.2f}"  # Range of entry prices
+    # entry gid site %
+    stats['Entry Grid Size'] = f"{100 - entry_prices[-1]:.2f}%"  # Range of entry prices
     stats['Close TP Prices Range'] = f"{min(close_grid_tp_prices):.2f} - {max(close_grid_tp_prices):.2f}"  # Range of close TP prices
+    stats['Close Grid Size'] = f"{100 - close_grid_tp_prices[-1]:.2f}%"
     return stats  # Return the statistics dictionary
 
 stats = calculate_statistics(entry_prices, close_grid_tp_prices, entry_quantities, close_grid_tp_quantities)  # Compute statistics
